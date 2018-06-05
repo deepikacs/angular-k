@@ -7,13 +7,13 @@
           <span class="icon-bar"></span> 
         </button>
         <a class="navbar-brand"><img class="image-resp" src="./assets/images/2D_2E_images/Menu_Green.png"></a>
-        <a class="navbar-brand"><img class="img-responsive" src="./assets/images/2D_2E_images/logo.png"></a>
+        <a class="navbar-brand" (click)="router.navigate(['/home'])"><img class="img-responsive" src="./assets/images/2D_2E_images/logo.png"></a>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
         <li class="custom-active"><a href="#" id="qwerty1"><img class="navicons" src="./assets/images/2D_2E_images/rss-symbol (2).png"><b> Feed</b></a></li>
           <li><a class="algn1" href="#"><img class="navicons" src="./assets/images/2D_2E_images/users-group.png"><b> Groups</b></a></li>
-          <li><a class="algn1" href="" ><img class="navicons" src="./assets/images/2D_2E_images/manager.png"><b> People</b></a></li>
+          <li><a class="algn1" (click)="router.navigate(['/dashboard-page'])" ><img class="navicons" src="./assets/images/2D_2E_images/manager.png"><b> People</b></a></li>
           <li><a class="algn1" href="#"><img class="navicons" src="./assets/images/2D_2E_images/swimming.png"><b> Activity</b></a></li>
           <li><a class="algn1" href="#"><img class="navicons" src="./assets/images/2D_2E_images/support.png"><b> Chat</b></a></li>
           <li><a class="algn2 pull-right" href="#"><img class="img pull-right" src="./assets/images/2D_2E_images/qwinix.png" alt="Avatar"></a></li>

@@ -7,13 +7,16 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { SinguppageComponent } from './singuppage/singuppage.component';
 import { DashboardPageComponent } from './dashboard-page/dashboard-page.component';
 import { FeedPageComponent } from './feed-page/feed-page.component';
+import { LoginComponent } from './login/login.component';
+
 
 const appRoutes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomepageComponent },
   { path: 'sign_up', component: SinguppageComponent },
-  // { path: '**', component: PageNotFoundComponent }
-  // { path: 'table_data', component: TableDataComponent },
+  { path: 'login', component: LoginComponent },
+  { path: 'dashboard-page', component:DashboardPageComponent},
+  { path: 'feed-page', component:FeedPageComponent}
   ];
 
 @NgModule({
@@ -22,7 +25,9 @@ const appRoutes: Routes = [
     HomepageComponent,
     SinguppageComponent,
     DashboardPageComponent,
-    FeedPageComponent
+    FeedPageComponent,
+    LoginComponent
+
   ],
   imports: [
     RouterModule,
