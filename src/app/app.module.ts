@@ -5,7 +5,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { SinguppageComponent } from './singuppage/singuppage.component';
-
+import { DashboardPageComponent } from './dashboard-page/dashboard-page.component';
+import { FeedPageComponent } from './feed-page/feed-page.component';
 
 const appRoutes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -19,7 +20,9 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     HomepageComponent,
-    SinguppageComponent
+    SinguppageComponent,
+    DashboardPageComponent,
+    FeedPageComponent
   ],
   imports: [
     RouterModule,
