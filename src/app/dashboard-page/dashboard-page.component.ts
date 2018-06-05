@@ -153,7 +153,7 @@ export class DashboardPageComponent implements OnInit {
   });
   var cacheDom = "";
   $('.parent').click(function(){
-    cacheDom = $('.test');
+    var cacheDom = $('.test');
     $('.test').remove();
   });
   $('.cal').click(function(){
